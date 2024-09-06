@@ -62,6 +62,16 @@ const Profile = () => {
             />
           </View>
         </View>
+
+         <CustomButton
+          className="mt-6"
+          title="Logout"
+          onPress={() => {
+            signOut();
+            router.push(`/(auth)/sign-in`);
+          }}
+          bgVariant="danger"
+        />
       </ScrollView>
     </SafeAreaView>
   );
